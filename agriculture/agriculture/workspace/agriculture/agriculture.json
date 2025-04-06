@@ -163,9 +163,8 @@
  "owner": "Administrator",
  "parent_page": "",
  "public": 1,
- "restrict_to_domain": "Agriculture",
  "roles": [],
- "sequence_id": 3,
+ "sequence_id": 3.0,
  "shortcuts": [],
  "title": "Agriculture"
 }

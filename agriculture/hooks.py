@@ -1,5 +1,3 @@
-from . import __version__ as app_version
-
 app_name = "agriculture"
 app_title = "Agriculture"
 app_publisher = "Frappe"
@@ -15,7 +13,7 @@ required_apps = ["erpnext"]
 workspaces = [
     {
         "name": "Agriculture",
-        "icon": "octicon octicon-file-directory",
+        "icon": "agriculture",
         "module": "Agriculture",
         "type": "module",
         "link": "agriculture",
