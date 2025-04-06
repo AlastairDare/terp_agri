@@ -12,6 +12,29 @@ app_license = "MIT"
 
 required_apps = ["erpnext"]
 
+workspaces = [
+    {
+        "name": "Agriculture",
+        "icon": "octicon octicon-file-directory",
+        "module": "Agriculture",
+        "type": "module",
+        "link": "agriculture",
+        "label": "Agriculture"
+    }
+]
+
+add_to_apps_screen = [
+	{
+		"name": "agriculture",
+		"logo": "/assets/transportation/images/frappe-transportation-logo.svg",
+		"title": "Agriculture",
+		"route": "/app/agriculture",
+	}
+]
+
+app_include_js = "agriculture.bundle.js"
+# app_include_css = "agriculture.bundle.css"
+
 # Includes in <head>
 # ------------------
 
@@ -191,20 +214,6 @@ required_apps = ["erpnext"]
 # 	"agriculture.auth.validate"
 # ]
 
-global_search_doctypes = {
-	"Agriculture": [
-		{'doctype': 'Weather', 'index': 1},
-		{'doctype': 'Soil Texture', 'index': 2},
-		{'doctype': 'Water Analysis', 'index': 3},
-		{'doctype': 'Soil Analysis', 'index': 4},
-		{'doctype': 'Plant Analysis', 'index': 5},
-		{'doctype': 'Agriculture Analysis Criteria', 'index': 6},
-		{'doctype': 'Disease', 'index': 7},
-		{'doctype': 'Crop', 'index': 8},
-		{'doctype': 'Fertilizer', 'index': 9},
-		{'doctype': 'Crop Cycle', 'index': 10}
-	]
-}
 
 domains = {
 	'Agriculture': 'agriculture.agriculture.agriculture',
